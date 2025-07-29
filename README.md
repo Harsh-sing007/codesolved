@@ -1,70 +1,96 @@
-<h1 align="center">🔥 Daily LeetCode Grind 🔥</h1>
+<!-- README.md -->
+
+<h1 align="center">🚀 LeetCode Journey of Harshsi17 💻</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&color=00F7F7&width=600&lines=Hi+there!+I'm+Harshsi17+on+LeetCode!;Solving+DSA+1+day+at+a+time...;Java+%7C+Python+%7C+C%2B%2B;Consistency+>+Intensity" alt="Typing SVG" />
+  <img src="https://img.shields.io/badge/Language-Java|Python|C++-informational?style=flat-square&logo=leetcode&color=brightgreen" alt="Languages">
+  <img src="https://img.shields.io/badge/Goal-Solve%20DSA%20Daily-orange?style=flat-square&logo=target">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&pause=1000&color=00F7F7&center=true&vCenter=true&multiline=true&width=1000&height=80&lines=Welcome+to+My+LeetCode+Solutions+Repo!;Tracking+my+daily+DSA+progress+with+Java%2C+Python%2C+and+C%2B%2B!;100%25+Focus+%7C+Zero+Excuses+%7C+Daily+Progress" alt="Typing SVG" />
 </p>
 
 ---
 
-## 🚀 About This Repo
+## 📌 About This Repository
 
-This repository contains my journey of solving **LeetCode** problems daily using:
-- 🟨 Java  
-- 🟦 Python  
-- 🟥 C++
+This repository contains all the LeetCode problems I've solved, directly synced using the **LeetHub extension** or manually added, in multiple languages like **Java**, **Python**, and **C++**.
 
-I use the [LeetHub Extension](https://github.com/QasimWani/LeetHub) to automatically sync solved problems into this GitHub repo. It's a fully automated system — just code on LeetCode, and it gets pushed here!
+It's part of my long-term journey to master **Data Structures & Algorithms (DSA)** and become technically sound for solving real-world software challenges and top-tier interviews.
 
 ---
 
-## 📊 Real-Time LeetCode Stats
-
-> Username: [`Harshsi17`](https://leetcode.com/u/Harshsi17/)
-
-![LeetCode Stats](https://leetcard.jacoblin.cool/Harshsi17?theme=dark&font=baloo&ext=contest)
+> 📖 **“Consistency always wins. It's not about solving 1000 problems in a day — it's about solving one problem daily, for 1000 days.”** 🌱
 
 ---
 
-## 📈 Language Usage (Visualized)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Harsh-sing007&layout=compact&theme=radical&hide_title=true)
-
----
-
-## 🧠 Topic-wise Mastery Progress (Experimental)
-
-> _Real-time topic-level graph_  
-> (Data loads based on recent syncs from LeetHub & LeetCode)
-
-[![LeetCode Graph](https://leetcard.jacoblin.cool/Harshsi17?theme=light&font=source_code_pro&ext=heatmap)](https://leetcode.com/u/Harshsi17/)
-
----
-
-## 🧵 Daily Quote to Stay on Track
+## 🔍 Real-Time LeetCode Stats
 
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Quote" />
+  <img src="https://leetcard.jacoblin.cool/Harshsi17?theme=dark&font=baloo&ext=activity&animation=true" alt="Harshsi17's LeetCode Stats" />
 </p>
 
 ---
 
-## 💡 Tip to Anyone Reading:
+## 📊 Language Usage (via LeetHub Sync)
 
-> "Code for 1 hour. Read for 30 minutes. Think for 10 minutes. Repeat. That’s how champions are built."
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harsh-sing007&layout=compact&theme=tokyonight&hide_title=true" alt="Languages Used" />
+</p>
 
 ---
 
-## 🔥 Want Your Own Setup?
+## ⏱️ Daily Problem Solving Heatmap
 
-If you'd like your own:
-- 🏅 LeetCode badges  
-- 📈 Realtime stats  
-- 🌈 Topic heatmaps  
-- ⚙️ Fully automated LeetHub setup  
-Let me know, I’ll help you build your personalized version!
+<p align="center">
+  <img src="https://leetcard.jacoblin.cool/Harshsi17?ext=heatmap&theme=light&animation=true" alt="LeetCode Heatmap" />
+</p>
+
+---
+
+## 🎯 My Goal
+
+- 🧩 Solve at least **1 LeetCode problem every day**
+- 🔎 Master key topics: Arrays, Trees, Graphs, DP, Backtracking, Sliding Window
+- 🔥 Track consistency using real-time stats & sync
+- 💻 Improve across multiple languages: Java, Python, C++
+
+---
+
+## 💡 Core Features
+
+✅ **Auto-sync via LeetHub**  
+✅ **Multi-language solutions: Java, Python, C++**  
+✅ **Live LeetCode stats (rank, problems, contests)**  
+✅ **No manual README editing — everything updates itself**  
+✅ **No folders for Easy/Medium/Hard — all in one place**  
+
+---
+
+## 🧠 Quote I Live By
+
+> _"If you can't explain it simply, you don't understand it well enough." — Albert Einstein_ 🧠
+
+---
+
+## 🤝 Connect With Me
+
+<p align="center">
+  <a href="https://leetcode.com/Harshsi17/"><img src="https://img.shields.io/badge/LeetCode-Harshsi17-yellow?style=for-the-badge&logo=leetcode&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/harsh-sing007/"><img src="https://img.shields.io/badge/LinkedIn-Harsh%20Singh-blue?style=for-the-badge&logo=linkedin" /></a>
+</p>
+
+---
+
+## 🙌 Final Word
+
+This repository is more than just code — it's a public commitment to personal growth and consistency.
+
+> _“Little by little, one travels far.” – J.R.R. Tolkien_
 
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Consistent%20Coding-100%25-success?style=for-the-badge&logo=leetcode&logoColor=yellow" />
+  <img src="https://media.giphy.com/media/xUPGcxpCV81ebKhjP2/giphy.gif" width="300" />
 </p>
