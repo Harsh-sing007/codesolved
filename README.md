@@ -1,75 +1,79 @@
-<h1 align="center">🚀 Harsh's LeetCode Daily Grind</h1>
+# 🚀 Harsh's LeetCode Journey
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00F7A5&center=true&vCenter=true&width=700&lines=🚧+Grinding+LeetCode+1+day+at+a+time!;🔥+Solving+DSA+in+Java%2C+Python+%26+C%2B%2B;📈+On+a+mission+to+master+problem+solving!" alt="Typing SVG" />
-</p>
+> “The best way to get better at coding is to solve problems. Every day.”
 
----
-
-> 🧠 *“Practice isn't the thing you do once you're good. It's the thing you do that makes you good.”* — Malcolm Gladwell
-
-Welcome to my **daily LeetCode problem-solving log**!  
-Every commit here reflects a problem I've solved on [LeetCode](https://leetcode.com/u/Harshsi17/), using **Java**, **Python**, and **C++**.
+Welcome to my daily LeetCode problem-solving journey!  
+This repository automatically syncs with my [LeetCode profile](https://leetcode.com/Harshsi17/) using the **LeetHub extension**. I solve problems in **Java**, **Python**, and **C++** — pushing boundaries and sharpening my DSA skills one day at a time.
 
 ---
 
-## 📊 My LeetCode Stats (Real-Time)
+## 🔥 Why This Repo?
 
-[![LeetCode Stats](https://leetcard.jacoblin.cool/Harshsi17?theme=dark&font=baloo&ext=heatmap)](https://leetcode.com/Harshsi17/)
-
----
-
-## 🧩 Problem Solving Tracker
-
-📌 I use [LeetHub](https://chrome.google.com/webstore/detail/leethub/lddjgfpjnajcgdghcdgpaljmchibfdje) to automatically sync my LeetCode submissions to this GitHub repository.
-
-All problems are committed directly — no folder structure. Every commit = one question solved ✅
+- 📌 All problems are synced directly using the **LeetHub** Chrome extension.
+- 🧠 I’m on a mission to solve DSA problems daily to prepare for tech interviews and boost my coding logic.
+- 🛠️ Languages used: `Java`, `Python`, `C++`
 
 ---
 
-## 🧠 Languages Used:
+## 📊 Real-Time LeetCode Stats
 
-- Java ☕
-- Python 🐍
-- C++ 🚀
+[![LeetCode Stats](https://leetcard.jacoblin.cool/Harshsi17?ext=activity&theme=unicorn&font=baloo&animation=true)](https://leetcode.com/Harshsi17/)
 
 ---
 
-## 🔥 GitHub Activity (Live)
+## 🗓️ GitHub Contribution Heatmap
 
-<!-- GitHub Commit Calendar -->
-[![GitHub Streak](https://streak-stats.demolab.com?user=Harsh-sing007&theme=dark&hide_border=true)](https://git.io/streak-stats)
-
-<!-- GitHub Contribution Graph -->
-[![Harsh's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Harsh-sing007&theme=react-dark&hide_border=true&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+![GitHub Heatmap](https://raw.githubusercontent.com/Harsh-sing007/Harsh-sing007/output/github-contribution-grid-snake.svg)
 
 ---
 
-## ✨ Motivation Wall
+## 🧠 Language Usage
 
-> “The only way to learn a new programming language is by writing programs in it.”  
-> — Dennis Ritchie    
->
-> “In programming, the hard part isn’t solving problems, but deciding what problems to solve.”  
-> — Paul Graham
+> Prefer writing code that’s clean, efficient, and language-flexible.
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Harsh-sing007&layout=compact&theme=tokyonight&langs_count=6)
 
 ---
 
-## 🚧 What's Next?
+## 🚧 Work in Progress
 
-🔄 Continuing daily submissions  
-📅 Building habits  
-🎯 Target: 300+ problems  
-🔥 Mastering patterns (sliding window, two pointers, dynamic programming, greedy, etc.)
-
----
-
-## 📣 Let’s Connect
-
-- 📍 [LeetCode](https://leetcode.com/Harshsi17/)
-- 💼 [GitHub](https://github.com/Harsh-sing007)
+- 🧩 Solving **LeetCode 75** curated questions
+- 🔄 Updating daily via **LeetHub**
+- 🔥 Currently focusing on: **Greedy**, **DP**, and **Sliding Window**
 
 ---
 
-<p align="center"><i>“Discipline is choosing between what you want now, and what you want most.”</i></p>
-<p align="center">💪 Keep grinding. Keep growing. 💻</p>
+## 🌟 Contribution Graph
+
+> Let the grind show 🌱  
+> The green blocks speak louder than words.
+
+[![Harsh's GitHub Activity Graph](https://github-readme-activity-graph.cyclic.app/graph?username=Harsh-sing007&theme=rogue)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+---
+
+## 📈 Want to track more?
+
+> Add these later if you want:
+
+- ✅ Topic-wise solved breakdown (DP, Graphs, Trees, etc.)
+- 📌 Personalized language usage pie chart
+- 🛡️ Streak badge like:  
+  ![Leetcode Streak](https://img.shields.io/badge/LeetCode_Streak-🔥_Day_30-orange?style=for-the-badge&logo=leetcode)
+
+Let me know — I’ll integrate it all for you!
+
+---
+
+## 🙌 Let's Connect
+
+- 🔗 [LeetCode Profile](https://leetcode.com/Harshsi17/)
+- 🧑‍💻 [GitHub Profile](https://github.com/Harsh-sing007)
+- 💬 Always open to discuss DSA, Java, Python, or anything dev!
+
+---
+
+> 💡 “Every solved bug teaches something. Every failed attempt is a stepping stone.”  
+> Keep pushing forward 🚀
+
+---
