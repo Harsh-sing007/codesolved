@@ -1,29 +1,26 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 class Solution {
 public:
     int mod = 1e9 + 7;
-    unordered_map<string, int> memo;
+    int dp[301][301];
 
-    int numberOfWays(int n, int x) {
-        return dfs(n, 1, x);
+    int solve(int n, int x, int num) {
+        long long power = pow(num, x);
+        if (power > n) return 0;
+        if (power == n) return 1;
+
+        if (dp[n][num] != -1) return dp[n][num];
+
+       
+        int include = solve(n - power, x, num + 1);
+        
+        int exclude = solve(n, x, num + 1);
+
+        return dp[n][num] = (include + exclude) % mod;
     }
 
-    int dfs(int remaining, int start, int power) {
-        if (remaining == 0) return 1;
-        if (remaining < 0) return 0;
-
-        string key = to_string(remaining) + "," + to_string(start);
-        if (memo.count(key)) return memo[key];
-
-        long long ans = 0;
-        for (int i = start; pow(i, power) <= remaining; i++) {
-            ans += dfs(remaining - (int)pow(i, power), i + 1, power);
-            ans %= mod;
-        }
-
-        return memo[key] = ans;
+    int numberOfWays(int n, int x) {
+        memset(dp, -1, sizeof(dp));
+        return solve(n, x, 1);
     }
 };
 
