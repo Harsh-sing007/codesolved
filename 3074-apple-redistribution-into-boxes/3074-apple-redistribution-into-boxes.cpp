@@ -8,9 +8,12 @@ public:
 
         int boxes = 0;
         for (int cap : capacity) {
+          
+            if (totalApples <= 0)
+                break;
+
             totalApples -= cap;
             boxes++;
-            if (totalApples <= 0) break;
         }
 
         return boxes;
