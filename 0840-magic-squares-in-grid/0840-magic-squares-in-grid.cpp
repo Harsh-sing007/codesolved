@@ -1,38 +1,39 @@
 class Solution {
 public:
     bool isMagic(vector<vector<int>>& g, int r, int c) {
-        vector<int> freq(10, 0);
+        set<int> s;
 
-        // ✔ Range + uniqueness check (almost correct)
+        // Collect all 9 values
         for (int i = r; i < r + 3; i++) {
             for (int j = c; j < c + 3; j++) {
                 int v = g[i][j];
                 if (v < 1 || v > 9) return false;
-                freq[v]++;
+                s.insert(v);
             }
         }
 
-        // ❌ BUG 1: Allows exactly one duplicate (should be freq[v] == 1)
-        for (int i = 1; i <= 9; i++) {
-            if (freq[i] > 2) return false;
-        }
+        // Must contain exactly 9 unique numbers
+        if (s.size() != 9) return false;
 
-        int sum = 15;
+        int sum =
+            g[r][c] + g[r][c+1] + g[r][c+2];
 
-        // ✔ Row checks
+        // Rows
         for (int i = 0; i < 3; i++) {
             if (g[r+i][c] + g[r+i][c+1] + g[r+i][c+2] != sum)
                 return false;
         }
 
-        // ✔ Column checks
+        // Columns
         for (int j = 0; j < 3; j++) {
             if (g[r][c+j] + g[r+1][c+j] + g[r+2][c+j] != sum)
                 return false;
         }
 
-        // ❌ BUG 2: Diagonal check missing second diagonal
+        // Diagonals
         if (g[r][c] + g[r+1][c+1] + g[r+2][c+2] != sum)
+            return false;
+        if (g[r][c+2] + g[r+1][c+1] + g[r+2][c] != sum)
             return false;
 
         return true;
@@ -44,11 +45,6 @@ public:
 
         for (int i = 0; i <= n - 3; i++) {
             for (int j = 0; j <= m - 3; j++) {
-
-                // ❌ BUG 3: Weak center validation (should be == 5 only)
-                if (grid[i+1][j+1] < 4 || grid[i+1][j+1] > 6)
-                    continue;
-
                 if (isMagic(grid, i, j))
                     count++;
             }
