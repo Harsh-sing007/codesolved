@@ -10,47 +10,24 @@
  * };
  */
 
-
 class Solution {
 public:
-    TreeNode* sortedArrayToBST(vector<int>& nums) {
-        if(nums.empty()) return NULL;
-        
-        int n = nums.size();
-        int mid = n / 2;
-        
+    
+    TreeNode* build(vector<int>& nums, int left, int right) {
+        if (left > right) 
+            return nullptr;
+
+        int mid = left + (right - left) / 2;
+
         TreeNode* root = new TreeNode(nums[mid]);
-        
-        queue<pair<TreeNode*, pair<int,int>>> q;
-        
-        // push left range
-        q.push({root, {0, mid - 1}});
-        
-        // push right range
-        q.push({root, {mid + 1, n - 1}});
-        
-        while(!q.empty()) {
-            auto front = q.front();
-            q.pop();
-            
-            TreeNode* parent = front.first;
-            int left = front.second.first;
-            int right = front.second.second;
-            
-            if(left > right) continue;
-            
-            int m = left + (right - left) / 2;
-            TreeNode* node = new TreeNode(nums[m]);
-            
-            if(nums[m] < parent->val)
-                parent->left = node;
-            else
-                parent->right = node;
-            
-            q.push({node, {left, m - 1}});
-            q.push({node, {m + 1, right}});
-        }
-        
+
+        root->left = build(nums, left, mid - 1);
+        root->right = build(nums, mid + 1, right);
+
         return root;
+    }
+
+    TreeNode* sortedArrayToBST(vector<int>& nums) {
+        return build(nums, 0, nums.size() - 1);
     }
 };
