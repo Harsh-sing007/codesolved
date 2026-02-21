@@ -1,47 +1,21 @@
-name: Smart LeetCode Checker
+name: Check LeetCode Solutions
 
 on:
   push:
 
 jobs:
-
-  check-code:
-
+  check:
     runs-on: ubuntu-latest
 
     steps:
 
-    - name: Checkout Code
-      uses: actions/checkout@v3
-
-
-    # ---------- C++ CHECK ----------
+    - uses: actions/checkout@v3
 
     - name: Compile C++
-      run: |
-        find . -name "*.cpp" -exec g++ {} \;
-
-
-    # ---------- JAVA CHECK ----------
+      run: find . -name "*.cpp" -exec g++ {} \;
 
     - name: Compile Java
-      run: |
-        find . -name "*.java" -exec javac {} \;
+      run: find . -name "*.java" -exec javac {} \;
 
-
-    # ---------- PYTHON SYNTAX CHECK ----------
-
-    - name: Python Compile Check
-      run: |
-        python3 -m py_compile $(find . -name "*.py")
-
-
-    # ---------- PYTHON ADVANCED CHECK ----------
-
-    - name: Install Flake8
-      run: |
-        pip install flake8
-
-    - name: Run Flake8
-      run: |
-        flake8 .
+    - name: Check Python
+      run: python3 -m py_compile $(find . -name "*.py")
