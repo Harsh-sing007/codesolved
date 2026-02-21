@@ -1,0 +1,22 @@
+name: Check LeetCode Solutions
+
+on:
+  push:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v3
+
+    - name: Compile C++
+      run: find . -name "*.cpp" -exec g++ {} \;
+
+    - name: Compile Java
+      run: find . -name "*.java" -exec javac {} \;
+
+    - name: Check Python
+      run: python3 -m py_compile $(find . -name "*.py")
