@@ -4,21 +4,21 @@ using namespace std;
 
 class Solution {
 public:
-    
-    static bool compare(int a, int b) {
-        
-        int countA = __builtin_popcount(a);
-        int countB = __builtin_popcount(b);
-        
-        if(countA == countB)
-            return a < b;
-            
-        return countA < countB;
-    }
-    
+
     vector<int> sortByBits(vector<int>& arr) {
         
-        sort(arr.begin(), arr.end(), compare);
+        vector<pair<int,int>> v;
+        
+        for(int i=0;i<arr.size();i++){
+            int bits = __builtin_popcount(arr[i]);
+            v.push_back({bits, arr[i]});
+        }
+        
+        sort(v.begin(), v.end());
+        
+        for(int i=0;i<arr.size();i++){
+            arr[i] = v[i].second;
+        }
         
         return arr;
     }
