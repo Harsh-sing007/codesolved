@@ -5,10 +5,7 @@ public:
         long long z = 0;
         for (char c : s) z += (c == '0');
         if (z == 0) return 0;
-
         if (k == (int)n) return (z == n) ? 1 : -1;
-
-        // If k is even, parity of zeros can't change -> must start with even zeros to reach 0
         if ((k % 2 == 0) && (z % 2 == 1)) return -1;
 
         auto ok = [&](long long t) -> bool {
