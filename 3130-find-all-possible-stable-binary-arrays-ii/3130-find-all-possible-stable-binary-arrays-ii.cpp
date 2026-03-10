@@ -6,29 +6,22 @@ public:
         vector<vector<vector<long long>>> dp(
             zero + 1, vector<vector<long long>>(one + 1, vector<long long>(2, 0)));
 
-        if (zero > 0) dp[1][0][0] = 1;
-        if (one > 0) dp[0][1][1] = 1;
+        for (int i = 1; i <= min(zero, limit); i++)
+            dp[i][0][0] = 1;
 
-        for (int i = 0; i <= zero; i++) {
-            for (int j = 0; j <= one; j++) {
+        for (int j = 1; j <= min(one, limit); j++)
+            dp[0][j][1] = 1;
 
-                if (i > 0) {
-                    dp[i][j][0] =
-                        ((dp[i-1][j][0] + dp[i-1][j][1]) % MOD);
+        for (int i = 1; i <= zero; i++) {
+            for (int j = 1; j <= one; j++) {
 
-                    if (i - limit - 1 >= 0)
-                        dp[i][j][0] =
-                        (dp[i][j][0] - dp[i-limit-1][j][1] + MOD) % MOD;
-                }
+                dp[i][j][0] = (dp[i-1][j][0] + dp[i-1][j][1]) % MOD;
+                if (i - limit - 1 >= 0)
+                    dp[i][j][0] = (dp[i][j][0] - dp[i-limit-1][j][1] + MOD) % MOD;
 
-                if (j > 0) {
-                    dp[i][j][1] =
-                        ((dp[i][j-1][0] + dp[i][j-1][1]) % MOD);
-
-                    if (j - limit - 1 >= 0)
-                        dp[i][j][1] =
-                        (dp[i][j][1] - dp[i][j-limit-1][0] + MOD) % MOD;
-                }
+                dp[i][j][1] = (dp[i][j-1][0] + dp[i][j-1][1]) % MOD;
+                if (j - limit - 1 >= 0)
+                    dp[i][j][1] = (dp[i][j][1] - dp[i][j-limit-1][0] + MOD) % MOD;
             }
         }
 
